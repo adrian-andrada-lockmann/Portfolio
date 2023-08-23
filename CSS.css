@@ -1,0 +1,492 @@
+@import url('https://fonts.cdnfonts.com/css/pixel-gamer-personal-use');
+
+.container {
+    display: block;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, monospace;
+    line-height: 1.8;
+    background-image: url(/media/img/bodybg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(1px);
+    color: #333;
+}
+
+.hello-world {
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3vw;
+    background-color: rgb(0, 0, 0) !important;
+    color: #ffffff;
+    position: relative;
+    left: -1%;
+    bottom: 89%;
+    font-family: monospace;
+    text-align: left;
+    padding-left: 5vw;
+    padding-right: 1vw;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 15vw;
+    text-shadow: 3px 2px 3px rgba(75, 168, 32, 0.801);
+    box-shadow: 4px 8px 3px rgb(124, 124, 124);
+}
+
+
+.sub-title {
+    justify-content: center;
+    display: block;
+    font-family: monospace;
+    text-align: center;
+    color: #dadada;
+    font-size: 1.1vw;
+    color: black;
+    text-shadow: 0px 8px 5px rgba(42, 121, 128, 0.41);
+    width: auto;
+    backdrop-filter: blur(2px);
+    border-radius: 18px;
+}
+
+.links {
+    font-family: monospace;
+    font-weight: 600;
+    letter-spacing: 0.5vw;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #0bcedc;
+    transition: color 0.3s ease;
+    padding: 0 45px;
+    backdrop-filter: blur(1px);
+    background-color: black;
+    border-radius: 8px;
+}
+
+.links:hover {
+    color: #0e4fe6;
+    text-decoration: underline;
+}
+
+
+
+.header-bg {
+    width: 100%;
+    background-image: url(media/img/headerbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.title-name {
+    display: inline-block;
+    position: relative;
+    left: 20%;
+    text-align: right;
+    justify-content: right;
+    padding-left: 20px;
+    padding-right: 500px;
+    font-size: 2vw;
+    letter-spacing: 2px;
+    color: #bef1fc;
+    background-color: rgb(0, 0, 0) !important;
+    border-radius: 8px;
+    font-family: monospace;
+    overflow: hidden;
+    text-shadow: 4px 11px 11px rgba(123, 174, 178, 0.8);
+    box-shadow: 4px 8px 3px rgb(124, 124, 124);
+    font-family: 'Pixel Gamer Personal use', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+main {
+padding: 1vw;
+display: block;
+
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas:
+        "about Skills ."
+        "Projects Skills .";
+    justify-content: center;
+    gap: 1vw;
+    justify-items: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.about {
+    grid-area: about;
+    padding: 1vw;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+    border-radius: 8px;
+    max-width: 50vw;
+    width: auto;
+}
+
+.about #img-profile {
+    max-width: 120px;
+    border-radius: 25% 10%;
+    border: 3px solid rgb(24, 24, 24);
+    float: left;
+    margin-right: 15px;
+    width: auto;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.about p {
+    width: auto;
+    text-align: justify;
+    margin-left: 5px;
+    text-shadow: 1px 2px 3px #0000006a;
+    font-weight: 400;
+    font-size: 24px;
+
+}
+
+.skills {
+    background-color: #dadadaa5;
+    grid-area: Skills;
+    width: auto;
+    box-shadow: rgba(14, 30, 37, 0.12) 10px 12px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 8px;
+    margin-right: 5vw;
+}
+
+.skills h2 {
+    font-family: 'Pixel Gamer Personal use', sans-serif;
+    font-size: 2vw;
+    color: #1f6495;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+        0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.skills div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: 2px solid #a0aaab;
+    border-radius: 8px;
+    background-color: #39b15f1d;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.skills div:hover {
+    transform: rotate(5deg) scale(1.1);
+    background-color: #d9dee0;
+}
+
+.skills div:nth-child(even):hover {
+    transform: rotate(-5deg) scale(1.1);
+    background-color: #a1bac0;
+}
+
+.skills img {
+    max-width: 10vh;
+    height: auto;
+}
+
+.projects {
+    grid-area: Projects;
+    background-color: #dadadaa5;
+    border-radius: 8px;
+    box-shadow: rgba(14, 30, 37, 0.12) 10px 12px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.project-img {
+    justify-content: center;
+    align-items: center;
+    margin: 1vw;
+    border-radius: 8px;
+    width: 420px;
+    max-width: auto;
+    height: 17vh;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.projects h2 {
+    font-family: 'Pixel Gamer Personal use', sans-serif;
+    font-size: 3vw;
+    color: #1f6495;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+        0px -4px 10px rgba(255, 255, 255, 0.3);
+    margin-left: 20px;
+}
+
+.projects ul {
+    justify-content: center;
+    padding: 1vw;
+    align-items: center;
+}
+
+#project-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1vw;
+    width: 1000px;
+    justify-content: center;
+}
+
+
+#project-list li {
+    height: 28vh;
+    border: 3px solid #197278;
+    border-radius: 8px;
+    margin: 1vw 1vh;
+    transition: transform 0.3s ease;
+    
+}
+
+#project-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 4px 4px rgb(52, 52, 52);
+    background-color: #d9dee0
+}
+
+
+#project-list h3 {
+    color: #1f6495;
+    text-align: right;
+    text-decoration: overline;
+    margin-top: -20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+#project-list p {
+    color: #1b557e;
+    font-family: monospace;
+    margin: -20px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+
+#project-list a {
+    color: #000000;
+    text-decoration: none;
+}
+#project-list a:visited{
+    color: #00636a;
+    text-decoration: none; 
+}
+
+#footer {
+    height: 12vh;
+    background-color: #26879c;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+#footer p{
+    font-family: 'Pixel Gamer Personal use', sans-serif;
+}
+
+#footer div {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+#footer a {
+    width: 100%;
+    display: center;
+    color: white;
+    margin: 2vh;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: none;
+    fill: white;
+}
+
+
+
+
+@media screen and (max-width: 995px) {
+
+    .header-bg {
+        width: 100%;
+        height: auto;
+    }
+
+    .title-name {
+        font-size: 3vw;
+        padding-right: 150px;
+
+    }
+
+    .about {
+        width: 500px;
+    }
+
+    .links {
+        font-size: 14px;
+    }
+
+    .about p {
+        width: auto;
+        font-size: 22px;
+        text-align: justify;
+        margin-left: 5px;
+        text-shadow: 1px 2px 3px #0000006a;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .about .img-profile{
+        width: 100px;
+        height: auto;
+    }
+
+    .sub-title {
+        font-size: 14px;
+    }
+
+    .skills {
+        display: table-column-group;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+    .projects {
+        width: 70vw;
+        height: auto;
+    }
+
+    .projects ul{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 63vw !important;
+    }
+    #project-list li {
+        width: 25vw;
+        text-align: center;
+    }
+
+    .project-img {
+        width: 23vw;
+        height: 12vh;
+    }
+
+    #project-list h3{
+        margin-top: 5px;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 700px) {
+
+
+    .header-bg {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    .title-name {
+    font-size: 2.9vw;
+    padding-right: 150px;
+    }
+
+    .about #img-profile {
+        width: 14vw !important;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer a {
+        margin: 1vw;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+.title-name{
+    font-size: 4vw;
+}
+.sub-title{
+    font-size: 2vw;
+}
+
+.links {
+    font-size: 1vw;
+}
+
+.about p {
+    font-size: 2vw;
+}
+
+.skills{
+    width: 10vw;
+}
+
+.skills img{
+    width: 6.5vw;
+}
+
+
+.projects h3{
+    font-size: 2vw;
+}
+
+#project-list li {
+    width: auto;
+    height: 19vh;
+}
+.project-img {
+width: 20vw;
+height: 7vh;
+}
+#project-list p  {
+    font-size: 2vw;
+    margin-top: 2vh;
+}
+
+#footer{
+    font-size: 2vw;
+}
+#footer a{
+    margin: 1vh
+}
+}
