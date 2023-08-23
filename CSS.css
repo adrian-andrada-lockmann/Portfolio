@@ -452,7 +452,7 @@ display: block;
 }
 
 .links {
-    font-size: 1vw;
+    font-size: 2vw;
 }
 
 .about p {
@@ -470,6 +470,7 @@ display: block;
 
 .projects h3{
     font-size: 2vw;
+    text-align:center;
 }
 
 #project-list li {
