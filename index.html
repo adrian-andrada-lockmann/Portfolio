@@ -15,10 +15,8 @@
 <body>
     <div class="container">
         <header class="header-bg">
-            <h2 class="hello-world">Hello world!</h2>
-            <h1 class="title-name">I'm Adrián Martín Andrada Lockmann</h1>
-            <h3 class="sub-title">Aspiring Programmer | Open for Job Opportunities | Self-Taught Since 2021</h3>
-            <nav>
+            
+            <nav id="navbar">
                 <ul>
                     <li><a href="#about" class="links">#ABOUT</a></li>
                     <li><a href="#skills" class="links">#SKILLS</a></li>
@@ -26,6 +24,12 @@
                     <li><a href="#contact" class="links">#CONTACT</a></li>
                 </ul>
             </nav>
+            <h2 class="hello-world">Hello world!</h2>
+            <div class="glitch-wrapper">
+            <div class="glitch" data-text="I'M ADRIAN MARTIN ANDRADA LOCKMANN">I'M ADRIAN MARTIN ANDRADA LOCKMANN</div>
+            </div>
+            <h3 class="sub-title">Aspiring Programmer | Open for Job Opportunities | Self-Taught Since 2021</h3>
+
         </header>
         <main>
 
@@ -38,58 +42,61 @@
                             Thrives on challenges and eager to learn new languages and technologies.
                             Aspires to contribute to the tech industry and collaborate in building the future through
                             code.
-                            Open to potential opportunities. Thank you for visiting my portfolio!
+                            Open to potential opportunities. <br>
+                            Thank you for visiting my portfolio!
                         </p>
                     </div>
                 </div>
                 <div class="skills" id="skills">
-                    <h2>#Skills</h2>
-                    <div>
-                        <img src="media/img/HTML.png" alt="HTML">
-                    </div>
-                    <div>
-                        <img src="media/img/CSS.png" alt="CSS">
-                    </div>
-                    <div>
-                        <img src="media/img/Javascript.png" alt="JavaScript">
-                    </div>
-                    <div>
-                        <img src="media/img/ReactJS.png" alt="React">
-                    </div>
-                    <div>
-                        <img src="media/img/Python.png" alt="Python">
-                    </div>
-                    <div>
-                        <img src="media/img/django.png" alt="Django">
-                    </div>
-                    <div>
-                        <img src="media/img/bootstrap.png" alt="Bootstrap">
-                    </div>
+                    <h2>SKILLS</h2>
+                    
+                        <div class="skill-item">
+                            <img src="media/img/HTML.png" alt="HTML">
+                        </div>
+                        <div class="skill-item">
+                            <img src="media/img/CSS.png" alt="CSS">
+                        </div>
+                        <div class="skill-item">
+                            <img src="media/img/Javascript.png" alt="JavaScript">
+                        </div>
+                        <div class="skill-item">
+                            <img src="media/img/ReactJS.png" alt="React">
+                        </div>
+                        <div class="skill-item">
+                            <img src="media/img/Python.png" alt="Python">
+                        </div>
+                        <div class="skill-item">
+                            <img src="media/img/django.png" alt="Django">
+                        </div>
+                        <div class="skill-item">
+                            <img src="media/img/bootstrap.png" alt="Bootstrap">
+                        </div>
+                    
                 </div>
                 <div class="projects" id="projects">
-                    <h2>>>> My Projects</h2>
+                    <h2>MY PROJECTS</h2>
                     <ul id="project-list">
-                        <li><a href="https://github.com/ElR4T0n/E-Commerce-LOOTSEEKER">
+                        <li class="project-item"><a href="https://github.com/ElR4T0n/E-Commerce-LOOTSEEKER">
                                 <img class="project-img" src="media/img/ecommerce.png">
                                 <h3>E-Commerce</h3>
                                 <p>Website demo full functional.</p>
                             </a>
                         </li>
-                        <li><a href="https://elr4t0n.github.io/Pokedex/">
+                        <li class="project-item"><a href="https://elr4t0n.github.io/Pokedex/">
                                 <img class="project-img" src="media/img/pokedex.png">
-                                <h3>Pokedex using API</h3>
+                                <h3>PokeAPI</h3>
                                 <p>List of a lot of Pokemons.</p>
                             </a>
                         </li>
-                        <li><a href="https://elr4t0n.github.io/Simon-Says/">
+                        <li class="project-item"><a href="https://elr4t0n.github.io/Simon-Says/">
                                 <img class="project-img" src="media/img/simonsays.png">
                                 <h3>Simon says</h3>
                                 <p>Follow the sequence.</p>
                             </a>
                         </li>
-                        <li><a href="https://elr4t0n.github.io/PokeMemo/">
+                        <li class="project-item"><a href="https://elr4t0n.github.io/PokeMemo/">
                                 <img class="project-img" src="media/img/pokememo.png">
-                                <h3>Pokemon Memory Game</h3>
+                                <h3>PokeMEMO</h3>
                                 <p>Find matches.</p>
                             </a>
                         </li>
