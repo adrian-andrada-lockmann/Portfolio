@@ -53,7 +53,8 @@
 .line2 {
     height: 0.1vh;
     width: 75%;
-    background-color: #dadada;;
+    background-color: #dadada;
+    ;
     border-radius: 8px;
 }
 
@@ -337,20 +338,19 @@ main {
 
 
 .project-img {
+    object-fit:cover;
     justify-content: center;
     align-items: center;
-    border-radius: 21px;
-    width: 80%;
-    max-width: 366px;
-    height: 100%;
-    max-height: 175px;
+    border-radius: 4px;
+    width: 15vw;
+    height: 20vh;
     margin: 3vh;
-    border: 3px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .projects h2 {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 3vw;
+    font-size: 2.7vw;
     color: #dadada;
     text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
         0px -4px 10px rgba(255, 255, 255, 0.3);
@@ -381,16 +381,15 @@ main {
 }
 
 #project-list li:hover {
-    transform: scale(1.03);
+    transform: scale(1.13);
     box-shadow: 2px 4px 4px rgb(52, 52, 52);
     background-color: #486eae;
-    border: 1px solid black;
     z-index: 2;
 }
 
 #project-list li:hover p {
     display: block;
-    margin-top: 23.5vh;
+    margin-top: 22.4vh;
     z-index: 1;
 }
 
@@ -398,7 +397,7 @@ main {
     color: #ffffff;
     text-align: center;
     text-decoration: overline;
-    margin-top: -20px;
+    margin-top: -1vh;
     font-family: 'Rajdhani', sans-serif;
     position: relative;
 }
@@ -442,8 +441,8 @@ main {
     margin: 1vh 0 0vw 21vw;
     align-items: center;
     justify-content: center;
-    display: flex; 
-    flex-direction: row; 
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -464,21 +463,21 @@ main {
 
     align-items: center;
     justify-items: center;
-    
+
 }
 
 #footer a {
     width: 100%;
     fill: #dadada;
     margin: 1vw;
-    
+
     text-decoration: none;
 }
 
 #footer a:hover {
     text-decoration: none;
     fill: black;
-    
+
 }
 
 
@@ -653,8 +652,8 @@ main {
     }
 
     .project-img {
-        width: 35vw;
-        height: 14vh;
+        
+
         padding: 0px;
     }
 
