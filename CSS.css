@@ -51,7 +51,6 @@ body::-webkit-scrollbar-thumb:hover{
 
 .header-bg {
     width: 100%;
-
     overflow: hidden;
     text-align: center;
 }
@@ -60,7 +59,7 @@ body::-webkit-scrollbar-thumb:hover{
     height: 0.1vw;
     margin-left: 27%;
     margin-right: 0%;
-    margin-top: 3%;
+    margin-top: 2%;
     background-color: #dadada;
     border-radius: 8px;
 }
@@ -70,6 +69,15 @@ body::-webkit-scrollbar-thumb:hover{
     width: 75%;
     background-color: #dadada;
     ;
+    border-radius: 8px;
+}
+
+.line3 {
+    height: 0.1vw;
+    margin-left: -1.1%;
+    margin-right: 27%;
+    margin-top: 1.5%;
+    background-color: #dadada;
     border-radius: 8px;
 }
 
@@ -253,8 +261,8 @@ main {
     justify-content: center;
     gap: 1vh;
     justify-items: center;
-    align-items: center;
-    margin: 10px auto;
+    
+    margin: 1vh auto;
 
 }
 
@@ -296,7 +304,7 @@ main {
     width: auto;
     box-shadow: rgba(14, 30, 37, 0.12) 10px 12px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border-radius: 8px;
-    margin-right: 5vw;
+
 }
 
 .skills h2 {
@@ -347,7 +355,7 @@ main {
     background-color: #2a52988e;
     border-radius: 8px;
     box-shadow: rgba(43, 92, 113, 0.12) 10px 12px 4px 0px, rgba(61, 129, 158, 0.32) 0px 2px 16px 0px;
-    width: 85%;
+    width: 95%;
     padding: 20px;
 }
 
@@ -397,7 +405,7 @@ main {
 }
 
 #project-list li:hover {
-    transform: scale(1.13);
+    transform: scale(1.10);
     box-shadow: 2px 4px 4px rgb(52, 52, 52);
     background-color: #486eae;
     z-index: 2;
@@ -448,24 +456,25 @@ main {
 
 #footer {
     height: 11vh;
-    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+    /* box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);*/
     border-radius: 8px;
-    max-width: 50vw;
-    background-color: #2a529882;
+    max-width: 56vw;
+    /* background-color: #2a529882;*/
     color: #dadada;
     text-align: center;
     font-size: 2.2vw;
     letter-spacing: 0.3vw;
-    
-    margin: 1vh 0 0vw 21vw;
+    margin: auto;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 #footer h2 {
+    display: flex;
+    flex-direction: row;
     margin-top: 0.5vh;
     margin-bottom: -1.1vh;
     font-family: 'Rajdhani', sans-serif;
@@ -473,7 +482,7 @@ main {
     color: #dadada;
     text-align: center;
     justify-content: center;
-    width: 100%;
+    
     text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
         0px -4px 10px rgba(255, 255, 255, 0.3);
 }
@@ -488,13 +497,14 @@ main {
     width: 100%;
     fill: #dadada;
     margin: 1vw;
-
     text-decoration: none;
 }
 
 #footer a:hover {
     text-decoration: none;
-    fill: black;
+    fill: rgb(57, 82, 163);
+    transform: rotate(5deg) scale(1.1);
+    
 
 }
 
