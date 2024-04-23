@@ -2,16 +2,17 @@
 @import url('https://fonts.cdnfonts.com/css/balechin-royalo');
 @import url('https://fonts.cdnfonts.com/css/rajdhani');
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     width: 15px;
 
 }
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb {
     background-color: rgb(36, 68, 128);
     border-radius: 8px;
 }
 
-body::-webkit-scrollbar-thumb:hover{
+body::-webkit-scrollbar-thumb:hover {
     background-color: rgb(27, 51, 95);
 }
 
@@ -46,7 +47,7 @@ body::-webkit-scrollbar-thumb:hover{
     width: 15vw;
     text-shadow: 3px 2px 3px rgba(75, 168, 32, 0.801);
     box-shadow: 4px 8px 3px rgb(124, 124, 124);
-    cursor:default;
+    cursor: default;
 }
 
 .header-bg {
@@ -101,10 +102,10 @@ body::-webkit-scrollbar-thumb:hover{
     justify-content: center;
     text-align: center;
     font-family: 'Carson', sans-serif;
-    position:static;
+    position: static;
     bottom: 4vh;
     text-shadow: 4px -4px 0px rgba(123, 174, 178, 0.8);
-    cursor:default;
+    cursor: default;
 }
 
 .glitch {
@@ -178,7 +179,7 @@ body::-webkit-scrollbar-thumb:hover{
     width: 100%;
     backdrop-filter: blur(2px);
     border-radius: 18px;
-    cursor:default;
+    cursor: default;
 }
 
 
@@ -261,7 +262,7 @@ main {
     justify-content: center;
     gap: 1vh;
     justify-items: center;
-    
+
     margin: 1vh auto;
 
 }
@@ -289,12 +290,12 @@ main {
 
 .about p {
     color: #dadada;
-    width: auto;
+
     text-align: justify;
-    margin-left: 5px;
+    margin-left: 0.26vw;
     text-shadow: 1px 2px 3px #0000006a;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 350;
+    font-size: 1.5vw;
 
 }
 
@@ -302,9 +303,9 @@ main {
     background-color: #2a5298;
     grid-area: Skills;
     width: auto;
+    max-height: 68vw;
     box-shadow: rgba(14, 30, 37, 0.12) 10px 12px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    border-radius: 8px;
-
+    border-radius: 0.41vw;
 }
 
 .skills h2 {
@@ -320,11 +321,12 @@ main {
 
 .skills div {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     margin: auto;
-    border-radius: 8px;
+    border-radius: 0.41vw;
     background-color: #39b15f1d;
     padding: 1.5vw;
     transition: transform 0.3s ease;
@@ -337,11 +339,11 @@ main {
 
 .skills div:nth-child(even):hover {
     transform: rotate(-5deg) scale(1.1);
-    background-color: #a1bac0;
+    background-color: #dde2e4;
 }
 
 .skills img {
-    max-width: 10vh;
+    max-width: 5vw;
     height: auto;
 }
 
@@ -359,13 +361,17 @@ main {
     padding: 20px;
 }
 
-
+.project-image {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 .project-img {
     object-fit: cover;
     justify-content: center;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 1.56vw;
     width: 15vw;
     height: 20vh;
     margin: 3vh;
@@ -424,11 +430,12 @@ main {
     margin-top: -1vh;
     font-family: 'Rajdhani', sans-serif;
     position: relative;
+    font-size: 1.25vw;
 }
 
 #project-list li p {
     position: absolute;
-    top: 15px;
+    top: 0.78vw;
     left: 0px;
     width: 100%;
     height: auto;
@@ -482,7 +489,7 @@ main {
     color: #dadada;
     text-align: center;
     justify-content: center;
-    
+
     text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
         0px -4px 10px rgba(255, 255, 255, 0.3);
 }
@@ -504,7 +511,7 @@ main {
     text-decoration: none;
     fill: rgb(57, 82, 163);
     transform: rotate(5deg) scale(1.1);
-    
+
 
 }
 
@@ -646,16 +653,16 @@ main {
     }
 
     .about p {
-        font-size: 2.2vw;
+        font-size: 1.8vw;
     }
 
 
     .skills {
-        width: 12vw;
+        width: auto;
     }
 
     .skills h2 {
-        font-size: 2.8vw;
+        font-size: 2vw;
     }
 
     .skills img {
@@ -663,12 +670,11 @@ main {
     }
 
     .projects {
-        width: 55%;
+        width: 69%;
     }
 
     .projects h3 {
-
-        font-size: 3vw;
+        font-size: 2vw !important;
         text-align: center;
         justify-content: center;
         margin: 0 auto;
@@ -680,13 +686,12 @@ main {
     }
 
     .project-img {
-
-
+        width: 50%;
         padding: 0px;
     }
 
     #project-list p {
-        font-size: 2vw;
+        font-size: 2vw !important;
         margin-top: 2vh;
     }
 
@@ -706,4 +711,13 @@ main {
         height: 12vh;
         padding: 0px;
     }
+
+
+#footer {
+    font-size: 2vw;
+}
+
+#footer a {
+    margin: 1vh
+}
 }
