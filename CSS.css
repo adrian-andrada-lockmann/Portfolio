@@ -262,7 +262,6 @@ main {
     justify-content: center;
     gap: 1vh;
     justify-items: center;
-
     margin: 1vh auto;
 
 }
@@ -290,7 +289,6 @@ main {
 
 .about p {
     color: #dadada;
-
     text-align: justify;
     margin-left: 0.26vw;
     text-shadow: 1px 2px 3px #0000006a;
@@ -487,7 +485,6 @@ main {
     color: #dadada;
     text-align: center;
     justify-content: center;
-
     text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
         0px -4px 10px rgba(255, 255, 255, 0.3);
 }
@@ -495,10 +492,10 @@ main {
 #footer div {
     align-items: center;
     justify-items: center;
-
 }
 
 #footer a {
+    flex-direction: row;
     width: 100%;
     fill: #dadada;
     margin: 1vw;
@@ -509,10 +506,7 @@ main {
     text-decoration: none;
     fill: rgb(57, 82, 163);
     transform: rotate(5deg) scale(1.1);
-
-
 }
-
 
 
 
@@ -532,7 +526,7 @@ main {
 
     #navbar ul li a {
         margin-top: -2vh;
-        font-size: 1.3vw;
+        font-size: 2.5vw;
     }
 
     .about p {
@@ -582,57 +576,22 @@ main {
     #project-list li {
         width: 40vw;
         text-align: center;
-
     }
 
     #project-list li p {
         top: 8vh;
     }
 
-
 }
 
-
-@media screen and (max-width: 700px) {
-
-
-    .header-bg {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .title-name {
-        font-size: 4vw;
-    }
-
-    .links {
-        padding: 0px 5px;
-    }
-
-    .about #img-profile {
-        width: 14vw;
-    }
-
-    #project-list li p {
-        top: 1vh;
-    }
-
-    footer {
-        width: 100%;
-    }
-
-    footer a {
-        margin: 1vw;
-    }
-}
 
 /* #region ---------------------------------------*/
 @media screen and (max-width: 500px) {
 
     .hello-world {
-        font-size: 2vw;
-        width: 12vw;
+        font-size: 3vw;
+        width: 25vw;
+        bottom: 5px;
     }
 
     .title-name {
@@ -671,7 +630,6 @@ main {
         font-size: 14px;
         padding: 5px;
     }
-
 
     .skills {
         width: auto;
@@ -718,16 +676,14 @@ main {
         margin-top: 2vh;
     }
 
-    #footer {
-        font-size: 2vw;
-    }
-
     #footer h2 {
         font-size: 30px;
+        margin-bottom: 15px;
     }
 
     #footer a {
-        margin: 1vh
+        flex-direction: row;
+        margin: 2vh
     }
 }
 
