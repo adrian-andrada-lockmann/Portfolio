@@ -272,7 +272,7 @@ main {
     padding: 1vw;
     box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
     border-radius: 8px;
-    max-width: 50vw;
+    width: 50vw;
     width: auto;
     background-color: #2a529882;
 }
@@ -303,7 +303,7 @@ main {
     background-color: #2a5298;
     grid-area: Skills;
     width: auto;
-    max-height: 68vw;
+    height: 68vw;
     box-shadow: rgba(14, 30, 37, 0.12) 10px 12px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border-radius: 0.41vw;
 }
@@ -343,7 +343,7 @@ main {
 }
 
 .skills img {
-    max-width: 5vw;
+    width: 5vw;
     height: auto;
 }
 
@@ -463,10 +463,8 @@ main {
 
 #footer {
     height: 11vh;
-    /* box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);*/
     border-radius: 8px;
     max-width: 56vw;
-    /* background-color: #2a529882;*/
     color: #dadada;
     text-align: center;
     font-size: 2.2vw;
@@ -629,11 +627,12 @@ main {
     }
 }
 
-
-@media screen and (max-width: 600px) {
+/* #region ---------------------------------------*/
+@media screen and (max-width: 500px) {
 
     .hello-world {
         font-size: 2vw;
+        width: 12vw;
     }
 
     .title-name {
@@ -641,40 +640,64 @@ main {
         text-align: center;
     }
 
+    .glitch {
+        font-size: 7.5vw;
+    }
+
     .sub-title {
-        font-size: 2.3vw;
+        display: inline;
+        font-size: 2.6vw;
         text-align: center;
         margin-top: 20px;
     }
 
     .links {
-        font-size: 2vw;
+        font-size: 4vw;
         padding: 0px 5px;
     }
 
+    .about #img-profile {
+        width: 25vw;
+    }
+
+    .about {
+        width: 90%;
+    }
+
     .about p {
-        font-size: 1.8vw;
+        text-align: justify;
+        font-size: 4vw;
+        width: 95%;
+        font-size: 14px;
+        padding: 5px;
     }
 
 
     .skills {
         width: auto;
+        height: 660px;
     }
 
     .skills h2 {
-        font-size: 2vw;
+        font-size: 5vw;
     }
 
     .skills img {
-        width: 9vw;
+        justify-content: center;
+        align-items: center;
+        width: 15vw;
+        height: auto;
+        align-items: center;
     }
 
     .projects {
-        width: 69%;
+        width: 79%;
     }
-
+    .projects h2 {
+        font-size: 5vw;
+    }
     .projects h3 {
-        font-size: 2vw !important;
+        font-size: 4vw !important;
         text-align: center;
         justify-content: center;
         margin: 0 auto;
@@ -686,7 +709,7 @@ main {
     }
 
     .project-img {
-        width: 50%;
+        width: 80%;
         padding: 0px;
     }
 
@@ -697,6 +720,10 @@ main {
 
     #footer {
         font-size: 2vw;
+    }
+
+    #footer h2 {
+        font-size: 30px;
     }
 
     #footer a {
@@ -713,11 +740,11 @@ main {
     }
 
 
-#footer {
-    font-size: 2vw;
-}
+    #footer {
+        font-size: 2vw;
+    }
 
-#footer a {
-    margin: 1vh
-}
+    #footer a {
+        margin: 1vh
+    }
 }
