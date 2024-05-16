@@ -57,16 +57,16 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .line {
-    height: 0.1vw;
+    height: 1px;
     margin-left: 27%;
     margin-right: 0%;
-    margin-top: 2%;
+    margin-top: 3%;
     background-color: #dadada;
     border-radius: 8px;
 }
 
 .line2 {
-    height: 0.1vw;
+    height: 1px;
     width: 75%;
     background-color: #dadada;
     ;
@@ -512,12 +512,10 @@ main {
 
 @media screen and (max-width: 995px) {
 
-    .header-bg {
-        width: 100%;
-    }
+
 
     .glitch {
-        font-size: 3vw;
+        font-size: 5vw;
     }
 
     .about {
@@ -529,9 +527,12 @@ main {
         font-size: 2.5vw;
     }
 
+    .about{
+        width: 95%;
+    }
     .about p {
-        width: auto;
-        font-size: 22px;
+        width: 95%;
+        font-size: 24px;
         text-align: justify;
         margin-left: 5px;
         text-shadow: 1px 2px 3px #808080;
@@ -540,18 +541,32 @@ main {
     }
 
     .about .img-profile {
-        width: 100px;
+        width: 400px;
         height: auto;
     }
 
     .sub-title {
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
 
     .skills {
         display: table-column-group;
         align-items: center;
         text-align: center;
+        width: 12vw;
+        height: 94vw;
+    }
+
+    .skills h2 {
+        font-size: 3vw;
+    }
+
+    .skills img {
+        justify-content: center;
+        align-items: center;
+        width: 8vw;
+        height: auto;
+        align-items: center;
     }
 
 
@@ -559,6 +574,16 @@ main {
     .projects {
         width: 45vw;
         height: auto;
+    }
+
+    .projects h2 {
+        font-size: 3vw;
+    }
+
+    .projects p {
+        font-size: 1.7vw !important;
+        top: 10px !important;
+        
     }
 
     #project-list {
@@ -582,6 +607,30 @@ main {
         top: 8vh;
     }
 
+    .project-img {
+        justify-content: center;
+        width: 30vw;
+    }
+
+    .project-image h3 {
+        font-size: 24px !important;
+    }
+
+
+    #footer{
+        margin-left: 70px;
+    }
+    #footer h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
+
+    #footer a {
+        display: contents;
+        margin: 40px
+        
+    }
 }
 
 
@@ -672,18 +721,20 @@ main {
     }
 
     #project-list p {
-        font-size: 2vw !important;
+        font-size: 3vw !important;
         margin-top: 2vh;
     }
 
     #footer h2 {
         font-size: 30px;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
+        margin-right: 10px;
     }
 
     #footer a {
-        flex-direction: row;
-        margin: 2vh
+        display: contents;
+        margin: 40px
+        
     }
 }
 
