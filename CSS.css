@@ -301,7 +301,7 @@ main {
     background-color: #2a5298;
     grid-area: Skills;
     width: auto;
-    height: 68vw;
+    height: 76vw;
     box-shadow: rgba(14, 30, 37, 0.12) 10px 12px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border-radius: 0.41vw;
 }
@@ -554,7 +554,7 @@ main {
         align-items: center;
         text-align: center;
         width: 12vw;
-        height: 94vw;
+        height: 105vw;
     }
 
     .skills h2 {
@@ -682,7 +682,7 @@ main {
 
     .skills {
         width: auto;
-        height: 153vw;
+        height: 171vw;
     }
 
     .skills h2 {
