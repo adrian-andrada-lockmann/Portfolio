@@ -43,6 +43,7 @@ html {
 
 .line {
     height: 1px;
+    width: 60%;
     margin-left: 27%;
     margin-right: 0%;
     margin-top: 4%;
@@ -78,9 +79,8 @@ html {
 }
 
 .line3 {
-    height: 0.1vw;
-    margin-left: -1.1%;
-    margin-right: 27%;
+    width: 45%;
+    height: 1px;
     margin: 1.5%;
     background-color: #dadada2c;
     border-radius: 50%;
@@ -93,13 +93,21 @@ html {
     0%,
     100% {
         right: -1.1%;
-        /* Starting position */
     }
 
     50% {
-        right: 5%;
-        /* Move to the right */
+        right: -35%;
     }
+}
+
+.v-line {
+    display: flex;
+    position: absolute;
+    right: 30vw;
+    top: 40vw;
+    height: 90vh;
+    width: 1px;
+    background-color: #dadada24;
 }
 
 .title-name {
@@ -288,7 +296,7 @@ main {
     display: flex;
     grid-area: about;
     align-items: center;
-    width: auto;
+    width: 91%;
 }
 
 .about #img-profile {
@@ -307,6 +315,7 @@ main {
 }
 
 .about p {
+    cursor: default;
     color: #dadada;
     text-align: justify;
     text-shadow: 1px 2px 3px #0000006a;
@@ -372,16 +381,13 @@ main {
     overflow: hidden;
     background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
     box-shadow: 0px 0px 10px rgba(10, 151, 206, 0.247);
-    transition: background 0.3s ease-in-out;
-    /* Add transition for width */
+
 }
 
 .skills div:nth-child(even):hover {
     transform: rotate(-5deg) scale(1.1);
     z-index: 3;
-    /* ... other styles */
-    transition: width 0.3s ease-in-out;
-    /* Add transition for width */
+
 }
 
 .skills img {
@@ -429,8 +435,7 @@ main {
         0px -4px 10px rgba(255, 255, 255, 0.3);
     margin: 0;
     position: relative;
-    /* Necesario para usar translate */
-    animation: moveHorizontal 25s infinite;
+    animation: moveHorizontal 59s infinite;
 }
 
 @keyframes moveHorizontal {
@@ -441,19 +446,18 @@ main {
     }
 
     25% {
-        left: -200px;
-        /* Ajusta el valor según tu diseño */
+        left: -150px;
     }
 
     75% {
-        left: 200px;
-        /* Ajusta el valor según tu diseño */
+        left: 150px;
     }
 }
 
 
 
 #project-list {
+    overflow: visible;
     margin-left: -40px;
     list-style: none;
     display: grid;
@@ -482,11 +486,12 @@ main {
 
 #project-list li:hover p {
     display: block;
-    margin-top: 22.4vh;
+    margin-top: 17.2vw;
     z-index: 1;
 }
 
 #project-list a {
+    display: flex;
     color: #dadada;
     text-align: center;
     justify-content: center;
@@ -496,26 +501,8 @@ main {
     position: relative;
     font-size: 1.25vw;
     font-weight: 500;
+    
 }
-
-#project-list li p {
-    position: absolute;
-    top: 0.78vw;
-    left: 0px;
-    width: 100%;
-    height: auto;
-    display: none;
-    color: #dadada;
-    font-family: 'Carson';
-    margin: 0px 0px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-decoration: none;
-    text-align: center;
-    justify-content: center;
-    white-space: normal;
-}
-
 
 #project-list a:visited {
     color: #dadada;
@@ -562,9 +549,11 @@ main {
 }
 
 #footer a svg {
+    position: relative;
+    bottom: 25px;
     display: block;
     flex-direction: row;
-    width: 1.875vw;
+    width: 2vw;
     height: auto;
     fill: #dadada;
     padding: 1.5vw;
@@ -668,12 +657,10 @@ main {
     }
 
     #project-list li {
-        width: 40vw;
+        display: flex;
+        width: 100%;
         text-align: center;
-    }
-
-    #project-list li p {
-        top: 8vh;
+        justify-content: center;
     }
 
     .project-img {
@@ -685,7 +672,7 @@ main {
     }
 
     .project-image h3 {
-        font-size: 24px !important;
+        font-size: 1.5rem;
     }
 
     .v-line {
@@ -699,7 +686,7 @@ main {
     }
 
     #footer {
-        margin-left: 70px;
+        margin: auto;
     }
 
     #footer h2 {
@@ -713,7 +700,33 @@ main {
         margin: 40px
     }
 }
+/*// #region ---------------------------------------*/
+@media screen and (max-width: 768px) {
 
+
+    #footer a svg {
+        align-items: center;
+        justify-content: center;
+        width: 4.875vw;
+        height: auto;
+        fill: #dadada;
+        padding: 2.5vw;
+        text-decoration: none;
+    }
+
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 1fr 0.4fr
+    }
+
+    .project-img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
 
 /* #region ---------------------------------------*/
 @media screen and (max-width: 480px) {
