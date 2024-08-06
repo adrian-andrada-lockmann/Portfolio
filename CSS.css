@@ -75,7 +75,7 @@ html {
     letter-spacing: 10px;
     color: #e0f6ed;
     overflow: hidden;
-    font-family: 'Carson', sans-serif;
+    font-family: 'rajdhani', sans-serif;
 }
 
 .glitch-wrapper {
@@ -85,7 +85,7 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: 'Carson', sans-serif;
+    font-family: 'rajdhani', sans-serif;
     position: static;
     bottom: 4vh;
     text-shadow: 4px -4px 0px rgba(123, 174, 178, 0.8);
@@ -96,7 +96,7 @@ html {
     position: relative;
     padding-top: 8px;
     font-size: 3vw;
-    font-weight: bold;
+    font-weight:600;
     color: #FFFFFF;
     letter-spacing: 9px;
     z-index: 1;
@@ -237,7 +237,7 @@ main {
 
 .grid-layout {
     display: grid;
-    grid-template-columns: 0.5fr 0.1fr;
+    grid-template-columns: 0.6fr 0.1fr;
     grid-template-areas:
         "about about ."
         "Projects Skills .";
