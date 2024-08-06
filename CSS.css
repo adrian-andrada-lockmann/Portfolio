@@ -1,6 +1,7 @@
+@import url('https://fonts.cdnfonts.com/css/rajdhani');
 @import url('https://fonts.cdnfonts.com/css/carson');
 @import url('https://fonts.cdnfonts.com/css/balechin-royalo');
-@import url('https://fonts.cdnfonts.com/css/rajdhani');
+
 
 body::-webkit-scrollbar {
     width: 15px;
@@ -25,7 +26,7 @@ html {
     display: block;
     margin: 0px auto;
     padding: 0px;
-    font-family: 'Segoe UI', 'Rajdhani', sans-serif, 'Carson';
+    font-family: 'Segoe UI', 'Rajdhani', sans-serif;
     line-height: 1.2;
     background: rgb(36, 68, 128);
     background: radial-gradient(circle, rgba(36, 68, 128, 1) 0%, rgba(13, 25, 48, 1) 66%, rgba(13, 25, 48, 1) 100%);
