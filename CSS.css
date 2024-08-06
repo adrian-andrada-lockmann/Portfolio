@@ -407,14 +407,16 @@ main {
     z-index: 1;
 }
 
-#project-list h3 {
-    color: #ffffff;
+#project-list a {
+    color: #dadada;
     text-align: center;
+    justify-content: center;
     text-decoration: overline;
     margin-top: -1vh;
     font-family: 'Rajdhani', sans-serif;
     position: relative;
     font-size: 1.25vw;
+    font-weight: 500;
 }
 
 #project-list li p {
@@ -435,13 +437,9 @@ main {
     white-space: normal;
 }
 
-#project-list a {
-    color: #000000;
-    text-decoration: none;
-}
 
 #project-list a:visited {
-    color: #00636a;
+    color: #dadada;
     text-decoration: none;
 }
 
