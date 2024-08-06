@@ -44,16 +44,35 @@ html {
     height: 1px;
     margin-left: 27%;
     margin-right: 0%;
-    margin-top: 3%;
-    background-color: #dadada;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    background-color: #dadada81;
     border-radius: 8px;
+    position: relative;
+    /* Necessary for using `left` */
+    animation: moveLeft 25s infinite;
 }
 
+@keyframes moveLeft {
+
+    0%,
+    100% {
+        left: 0;
+    }
+
+    50% {
+        left: -15%;
+        /* Adjust the percentage as needed */
+    }
+}
+
+
 .line2 {
-    height: 1px;
+    margin: 3px 0px;
+    height: 2px;
     width: 75%;
-    background-color: #dadada;
-    ;
+    background-color: #dadada14;
+
     border-radius: 8px;
 }
 
@@ -61,9 +80,25 @@ html {
     height: 0.1vw;
     margin-left: -1.1%;
     margin-right: 27%;
-    margin-top: 1.5%;
-    background-color: #dadada;
-    border-radius: 8px;
+    margin: 1.5%;
+    background-color: #dadada2c;
+    border-radius: 50%;
+    position: relative;
+    animation: moveRight 20s infinite;
+}
+
+@keyframes moveRight {
+
+    0%,
+    100% {
+        right: -1.1%;
+        /* Starting position */
+    }
+
+    50% {
+        right: 5%;
+        /* Move to the right */
+    }
 }
 
 .title-name {
@@ -96,7 +131,7 @@ html {
     position: relative;
     padding-top: 8px;
     font-size: 3vw;
-    font-weight:600;
+    font-weight: 600;
     color: #FFFFFF;
     letter-spacing: 9px;
     z-index: 1;
@@ -290,14 +325,32 @@ main {
 }
 
 .skills h2 {
+    cursor: default;
     font-family: 'Rajdhani', sans-serif;
     font-size: 2vw;
     color: #dadada;
     text-align: center;
     justify-content: center;
+    text-decoration: underline;
     width: 100%;
     text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
         0px -4px 10px rgba(255, 255, 255, 0.3);
+    animation: scaleLoop 3s infinite;
+    /* Animación con duración de 3 segundos, repetición infinita */
+}
+
+@keyframes scaleLoop {
+    0% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scaleX(1.1);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
 }
 
 .skills div {
@@ -316,11 +369,18 @@ main {
     z-index: 2;
     border-radius: 4rem;
     overflow: hidden;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0px 0px 10px rgba(10, 151, 206, 0.247);
+    transition: background 0.3s ease-in-out;
+    /* Add transition for width */
 }
 
 .skills div:nth-child(even):hover {
     transform: rotate(-5deg) scale(1.1);
     z-index: 3;
+    /* ... other styles */
+    transition: width 0.3s ease-in-out;
+    /* Add transition for width */
 }
 
 .skills img {
@@ -357,14 +417,39 @@ main {
     border: 2px solid #2b549b;
 }
 
+
 .projects h2 {
+    cursor: default;
     font-family: 'Rajdhani', sans-serif;
-    font-size: 2.7vw;
+    font-size: 2.4vw;
+    text-decoration: underline;
     color: #dadada;
     text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
         0px -4px 10px rgba(255, 255, 255, 0.3);
     margin: 0;
+    position: relative;
+    /* Necesario para usar translate */
+    animation: moveHorizontal 25s infinite;
 }
+
+@keyframes moveHorizontal {
+
+    0%,
+    100% {
+        left: 0;
+    }
+
+    25% {
+        left: -200px;
+        /* Ajusta el valor según tu diseño */
+    }
+
+    75% {
+        left: 200px;
+        /* Ajusta el valor según tu diseño */
+    }
+}
+
 
 
 #project-list {
@@ -498,39 +583,40 @@ main {
 
 
     .glitch {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
-    .about {
-        width: 500px;
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 2fr 0.6fr;
     }
 
     #navbar ul li a {
-        margin-top: -2vh;
-        font-size: 2.5vw;
+        margin-top: -20px;
+        font-size: 1.5vw;
     }
 
     .about {
-        width: 95%;
+        width: 100%;
     }
 
     .about p {
         width: 95%;
-        font-size: 24px;
         text-align: justify;
         margin-left: 5px;
         text-shadow: 1px 2px 3px #808080;
-        font-weight: 200;
-        font-size: 14px;
+        font-weight: 400;
+        font-size: 1rem;
     }
 
-    .about .img-profile {
-        width: 200px;
+    #img-profile {
+        width: 400px;
         height: auto;
+        fill: red !important;
     }
 
     .sub-title {
-        font-size: 2vw;
+        font-size: 1.3rem;
     }
 
     .skills {
@@ -590,8 +676,10 @@ main {
     }
 
     .project-img {
+        display: flex;
         justify-content: center;
-        width: 40vw;
+        width: 100%;
+        object-fit: cover;
 
     }
 
@@ -599,6 +687,15 @@ main {
         font-size: 24px !important;
     }
 
+    .v-line {
+        display: flex;
+        position: absolute;
+        right: 29vw;
+        top: 65vh;
+        height: 90vh;
+        width: 1px;
+        background-color: #dadada24;
+    }
 
     #footer {
         margin-left: 70px;
