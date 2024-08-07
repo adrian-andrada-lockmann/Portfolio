@@ -131,7 +131,7 @@ html {
     font-family: 'rajdhani', sans-serif;
     position: static;
     bottom: 4vh;
-    text-shadow: 4px -4px 0px rgba(123, 174, 178, 0.8);
+    text-shadow: 4px -4px 5px rgba(123, 174, 178, 0.8);
     cursor: default;
 }
 
@@ -723,6 +723,21 @@ main {
 
     .projects h2 {
         font-size: 4vw;
+    }
+    @keyframes moveHorizontal {
+
+        0%,
+        100% {
+            left: 0;
+        }
+
+        25% {
+            left: -70px;
+        }
+
+        75% {
+            left: 70px;
+        }
     }
 
     #project-list {
