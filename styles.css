@@ -605,15 +605,15 @@ main {
     }
 
     .skills {
-        display: table-column-group;
-        align-items: center;
-        text-align: center;
-        width: 10vw;
-        height: 105vw;
-    }
+    display: table-column-group;
+    align-items: center;
+    text-align: center;
+    width: 10vw;
+    height: 94vw;
+}
 
     .skills h2 {
-        font-size: 3vw;
+        font-size: 2.4vw;
     }
 
     .skills img {
@@ -624,6 +624,18 @@ main {
         align-items: center;
     }
 
+    #project-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.42vw;
+        align-items: center;
+        place-items: center;
+    }
+
+    #project-list li {
+        width: 27vw;
+        height: 37vh;
+    }
 
 
     .project-img {
@@ -631,13 +643,13 @@ main {
         justify-content: center;
         align-items: center;
         border-radius: 8px;
-        width: 260px;
-        height: 200px;
+        width: 22vw;
+        height: 28vh;
         margin: 3vh;
         border: 1px solid #2b549b;
     }
 
-   
+
 
 }
 
@@ -656,7 +668,7 @@ main {
 }
 
 #footer {
-    margin: auto;
+    margin: 25px auto;
 }
 
 #footer h2 {
@@ -669,25 +681,87 @@ main {
     display: contents;
     margin: 40px
 }
-}
+
 
 /*// #region ---------------------------------------*/
 @media screen and (max-width: 768px) {
+    .glitch {
+        font-size: 5vw;
+    }
 
+    .v-line {
+        display: flex;
+        position: absolute;
+        right: 27vw;
+        top: 43vh;
+        height: 61vh;
+        width: 1px;
+        background-color: rgba(218, 218, 218, 0.14);
+    }
+
+    .skills {
+        display: table-column-group;
+        align-items: center;
+        text-align: center;
+        width: 12vw;
+        height: 114vw;
+    }
+    .skills h2 {
+        font-size: 3.2vw;
+    }
 
     #footer a svg {
         align-items: center;
         justify-content: center;
-        width: 4.875vw;
+        width: 3.875vw;
         height: auto;
         fill: #dadada;
         padding: 2.5vw;
         text-decoration: none;
     }
+    .projects h2 {
+        font-size: 4vw;
+    }
+    #project-list {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 0.42vw;
+        place-items: center;
+    }
+    #project-list li {
+        display: flex;
+        justify-content: center;
+        width: 31vw;
+        height: 25vh;
 
+    }
+    #project-list a {
+        display: table-caption;
+        color: #dadada;
+        text-align: center;
+        justify-content: normal;
+        text-decoration: overline;
+        margin: -10px 0;
+        font-family: 'Rajdhani', sans-serif;
+        position: relative;
+        font-size: 2.2vw;
+        font-weight: 500;
+    }
 
+.project-img {
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 22vw;
+    height: 13vh;
+    /* height: 29vh; */
+    /* margin: 2vw; */
+    border: 1px solid rgb(43, 84, 155);
+}
     .project-image {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         width: 100%;
         height: auto;
