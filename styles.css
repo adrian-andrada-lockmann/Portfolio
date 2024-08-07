@@ -402,12 +402,12 @@ main {
     justify-content: start;
     align-items: center;
     text-align: center;
-    border-radius: 2px;
     width: 95%;
-    padding: 20px;
+    padding: 10px;
 }
 
 .project-image {
+    width: 400px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -454,23 +454,22 @@ main {
     }
 }
 
-
-
 #project-list {
+    position: relative;
+    
     overflow: visible;
-    margin-left: -40px;
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     grid-gap: 1vh;
-    justify-content: center;
     align-items: center;
     place-items: center;
 }
 
 
 #project-list li {
-    width: 19vw;
+    width: 20vw;
     height: inherit;
     max-width: 800px;
     border-radius: 8px;
@@ -491,17 +490,16 @@ main {
 }
 
 #project-list a {
-    display: flex;
+    display: table-caption;
     color: #dadada;
     text-align: center;
-    justify-content: center;
+    justify-content: normal;
     text-decoration: overline;
-    margin-top: -1vh;
+    margin: auto;
     font-family: 'Rajdhani', sans-serif;
     position: relative;
     font-size: 1.25vw;
     font-weight: 500;
-    
 }
 
 #project-list a:visited {
