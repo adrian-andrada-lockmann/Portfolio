@@ -778,7 +778,9 @@ main {
 
 
 
-
+    #navbar ul li a {
+        font-size: 0.7rem;
+    }
 
     .glitch {
         font-size: 5vw;
@@ -840,6 +842,13 @@ main {
         align-items: center;
     }
 
+
+    .projects {
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+    }
+
     .projects h2 {
         font-size: 4vw;
     }
@@ -875,7 +884,6 @@ main {
         justify-content: center;
         width: 50vw;
         height: 28vh;
-
     }
 
     #project-list a {
@@ -884,7 +892,7 @@ main {
         text-align: center;
         justify-content: normal;
         text-decoration: overline;
-        margin: 0px 0;
+        margin: -10px 0;
         font-family: 'Rajdhani', sans-serif;
         position: relative;
         font-size: 4.2vw;
@@ -892,6 +900,7 @@ main {
     }
 
     .project-img {
+        left: 100px;
         object-fit: cover;
         justify-content: center;
         align-items: center;
@@ -928,9 +937,7 @@ main {
 
 @media screen and (max-width: 320px) {
     .project-img {
-        width: 35vw;
-        height: 12vh;
-        padding: 0px;
+
     }
 
 
