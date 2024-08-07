@@ -456,7 +456,6 @@ main {
 
 #project-list {
     position: relative;
-    
     overflow: visible;
     list-style: none;
     display: grid;
@@ -713,8 +712,9 @@ main {
     }
 
     .grid-layout {
-        display: grid;
-        grid-template-columns: 1fr 0.4fr
+        grid-template-areas: "";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
     }
 
     .project-img {
