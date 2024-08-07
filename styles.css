@@ -51,7 +51,6 @@ html {
     background-color: #dadada81;
     border-radius: 8px;
     position: relative;
-    /* Necessary for using `left` */
     animation: moveLeft 25s infinite;
 }
 
@@ -64,7 +63,7 @@ html {
 
     50% {
         left: -15%;
-        /* Adjust the percentage as needed */
+     
     }
 }
 
@@ -418,8 +417,8 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    width: 15vw;
-    height: 20vh;
+    width: 18vw;
+    height: 33vh;
     margin: 3vh;
     border: 2px solid #2b549b;
 }
@@ -660,11 +659,28 @@ main {
         justify-content: center;
     }
 
-    .project-img {
+    .project-image {
         display: flex;
-        justify-content: center;
         width: 100%;
-        object-fit: cover;
+        height: auto;
+        object-fit: fill;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-img {
+        object-fit:cover;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        width: 47vw;
+        height: 29vh;
+        margin: 3vh;
+        border: 1px solid #2b549b;
+    }
 
     }
 
@@ -711,18 +727,13 @@ main {
         text-decoration: none;
     }
 
-    .grid-layout {
-        grid-template-areas: "";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
 
-    .project-img {
+    .project-image {
         display: flex;
         justify-content: center;
         width: 100%;
         height: auto;
-        object-fit: cover;
+        object-fit:fill;
     }
 }
 
