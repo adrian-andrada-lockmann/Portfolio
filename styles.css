@@ -933,21 +933,22 @@ main {
         height: auto;
         object-fit: fill;
     }
+    #footer a {
+        display: contents;
+        margin: 40px
+    }
+    #footer a svg {
+        width: 5.875vw;
+        height: auto;
+        fill: #dadada;
+        padding: 2vw;
+        text-decoration: none;
+    }
 }
 
 
 
-#footer a {
-    display: contents;
-    margin: 40px
-}
-#footer a svg {
-    width: 5.875vw;
-    height: auto;
-    fill: #dadada;
-    padding: 2vw;
-    text-decoration: none;
-}
+
 
 
 @media screen and (max-width: 320px) {
