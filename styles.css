@@ -53,7 +53,13 @@ html[data-theme="dark"] {
 }
 
 html {
+    scroll-padding-top: 92px;
     scroll-behavior: smooth;
+}
+
+main section[id],
+#comandaops {
+    scroll-margin-top: 92px;
 }
 
 body {
@@ -453,6 +459,285 @@ h1 {
     line-height: 1.08;
 }
 
+.case-study-showcase {
+    display: grid;
+    grid-template-columns: minmax(0, 0.78fr) minmax(420px, 1fr);
+    gap: 2rem;
+    align-items: start;
+    padding: 2rem 0 2.2rem;
+    margin-bottom: 1.2rem;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.case-study-copy {
+    display: grid;
+    gap: 1rem;
+}
+
+.case-study-copy h3 {
+    font-size: 2rem;
+    line-height: 1.08;
+}
+
+.case-study-copy > p {
+    color: var(--muted-ink);
+    font-size: 1.04rem;
+}
+
+.case-study-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}
+
+.case-study-meta span,
+.project-status {
+    padding: 0.34rem 0.55rem;
+    color: var(--accent-strong);
+    background: var(--paper-strong);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    font-size: 0.78rem;
+    font-weight: 900;
+}
+
+.case-study-points {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.case-study-points div {
+    padding-top: 0.8rem;
+    border-top: 1px solid var(--line);
+}
+
+.case-study-points dt {
+    color: var(--ink);
+    font-weight: 900;
+}
+
+.case-study-points dd {
+    margin-top: 0.2rem;
+    color: var(--muted-ink);
+}
+
+.ops-demo {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    color: var(--contrast-text);
+    background: var(--contrast-bg);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.ops-demo .eyebrow {
+    color: var(--contrast-accent);
+}
+
+.ops-demo__toolbar,
+.ops-actions,
+.ops-panel__heading,
+.ops-order div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+}
+
+.ops-demo h4,
+.ops-demo h5 {
+    margin: 0;
+    line-height: 1.1;
+}
+
+.ops-demo h4 {
+    margin-top: 0.2rem;
+    font-size: 1.35rem;
+}
+
+.ops-demo h5 {
+    font-size: 0.95rem;
+}
+
+.mini-button {
+    min-height: 38px;
+    padding: 0.58rem 0.72rem;
+    color: #07100d;
+    background: var(--accent-gold);
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 0.86rem;
+    font-weight: 900;
+    line-height: 1;
+    transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.mini-button:hover,
+.mini-button:focus-visible {
+    transform: translateY(-1px);
+    background: #f4c85d;
+    outline: none;
+}
+
+.mini-button-secondary {
+    color: var(--contrast-text);
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.24);
+}
+
+.mini-button-secondary:hover,
+.mini-button-secondary:focus-visible {
+    color: #07100d;
+    background: #ffffff;
+}
+
+.ops-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.55rem;
+}
+
+.ops-metrics article,
+.ops-panel {
+    background: rgba(255, 255, 255, 0.065);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius);
+}
+
+.ops-metrics article {
+    min-height: 84px;
+    padding: 0.8rem;
+    display: grid;
+    align-content: center;
+    gap: 0.2rem;
+}
+
+.ops-metrics span {
+    font-size: 1.45rem;
+    line-height: 1;
+    font-weight: 900;
+}
+
+.ops-metrics p,
+.ops-panel__heading span,
+.ops-order p,
+.ops-order small,
+.ops-empty,
+.ops-table small {
+    color: var(--contrast-muted);
+}
+
+.ops-metrics p {
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+.ops-actions {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.ops-board {
+    display: grid;
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1fr);
+    gap: 0.8rem;
+}
+
+.ops-panel {
+    min-width: 0;
+    padding: 0.85rem;
+    display: grid;
+    gap: 0.8rem;
+}
+
+.ops-panel__heading span {
+    font-size: 0.76rem;
+    font-weight: 800;
+}
+
+.ops-table-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.55rem;
+}
+
+.ops-table {
+    min-height: 86px;
+    padding: 0.7rem;
+    display: grid;
+    gap: 0.25rem;
+    align-content: start;
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius);
+}
+
+.ops-table.is-active {
+    background: rgba(98, 214, 192, 0.14);
+    border-color: rgba(98, 214, 192, 0.38);
+}
+
+.ops-table span,
+.ops-order strong {
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+
+.ops-table strong {
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.ops-order-list {
+    display: grid;
+    gap: 0.55rem;
+}
+
+.ops-order {
+    padding: 0.75rem;
+    display: grid;
+    gap: 0.35rem;
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 4px solid var(--accent-gold);
+    border-radius: var(--radius);
+}
+
+.ops-order.is-preparing {
+    border-left-color: var(--accent-warm);
+}
+
+.ops-order.is-ready {
+    border-left-color: var(--accent);
+}
+
+.ops-order span {
+    padding: 0.24rem 0.42rem;
+    color: #07100d;
+    background: var(--accent-gold);
+    border-radius: var(--radius);
+    font-size: 0.72rem;
+    font-weight: 900;
+}
+
+.ops-order.is-preparing span {
+    background: var(--accent-warm);
+}
+
+.ops-order.is-ready span {
+    background: var(--accent);
+}
+
+.ops-order p,
+.ops-order small,
+.ops-empty {
+    font-size: 0.84rem;
+}
+
 .about-grid {
     display: grid;
     grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
@@ -552,6 +837,11 @@ h1 {
     gap: 1rem;
 }
 
+.project-grid--priority {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 1rem;
+}
+
 .project-card {
     overflow: hidden;
     display: grid;
@@ -586,6 +876,68 @@ html[data-theme="dark"] .project-card:hover {
     transform: scale(1.04);
 }
 
+.project-card__visual {
+    min-height: 220px;
+    padding: 1rem;
+    display: grid;
+    align-content: end;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.project-card__visual--sap {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    background:
+        linear-gradient(135deg, rgba(24, 143, 122, 0.9), rgba(16, 21, 19, 0.9)),
+        var(--surface-strong);
+}
+
+.project-card__visual--sap span {
+    min-height: 46px;
+    display: grid;
+    place-items: center;
+    color: #fbfcf8;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: var(--radius);
+    font-weight: 900;
+}
+
+.project-card__visual--noisynth {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: end;
+    background:
+        linear-gradient(135deg, rgba(16, 21, 19, 0.95), rgba(239, 106, 74, 0.78)),
+        var(--contrast-bg);
+}
+
+.project-card__visual--noisynth span {
+    display: block;
+    min-height: 44px;
+    background: var(--accent-gold);
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.project-card__visual--noisynth span:nth-child(2) {
+    min-height: 96px;
+    background: var(--accent);
+}
+
+.project-card__visual--noisynth span:nth-child(3) {
+    min-height: 148px;
+    background: #ffffff;
+}
+
+.project-card__visual--noisynth span:nth-child(4) {
+    min-height: 72px;
+    background: var(--accent-warm);
+}
+
+.project-card__visual--noisynth span:nth-child(5) {
+    min-height: 118px;
+    background: var(--contrast-accent);
+}
+
 .project-card__body {
     padding: 1.15rem;
     display: grid;
@@ -608,6 +960,16 @@ html[data-theme="dark"] .project-card:hover {
     font-weight: 900;
 }
 
+.project-note {
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--line);
+    font-size: 0.92rem;
+}
+
+.project-status {
+    justify-self: start;
+}
+
 .text-link {
     justify-self: start;
     color: var(--ink);
@@ -626,11 +988,79 @@ html[data-theme="dark"] .project-card:hover {
     outline: none;
 }
 
+.learning-lab {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: minmax(0, 0.48fr) minmax(0, 1fr);
+    gap: 1.5rem;
+    border-top: 1px solid var(--line);
+}
+
+.learning-lab h3 {
+    margin: 0.25rem 0 0;
+    font-size: 1.45rem;
+    line-height: 1.12;
+}
+
+.learning-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+.learning-list a {
+    min-height: 92px;
+    padding: 0.9rem;
+    display: grid;
+    align-content: center;
+    gap: 0.25rem;
+    color: var(--ink);
+    background: var(--paper-strong);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.learning-list a:hover,
+.learning-list a:focus-visible {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    background: var(--paper);
+    outline: none;
+}
+
+.learning-list span {
+    font-weight: 900;
+}
+
+.learning-list small {
+    color: var(--muted-ink);
+    font-size: 0.84rem;
+    font-weight: 700;
+}
+
 .skills-layout {
     display: grid;
     grid-template-columns: minmax(0, 0.78fr) minmax(0, 1fr);
     gap: 2rem;
     align-items: start;
+}
+
+.skills-groups {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.skills-group {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.skills-group h3 {
+    font-size: 1.08rem;
+    line-height: 1.2;
 }
 
 .skill-grid {
@@ -659,6 +1089,46 @@ html[data-theme="dark"] .project-card:hover {
     width: 48px;
     height: 48px;
     object-fit: contain;
+}
+
+.marketing-skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+}
+
+.marketing-skill-card {
+    min-height: 144px;
+    padding: 1rem;
+    display: grid;
+    gap: 0.55rem;
+    align-content: start;
+    background: var(--paper-strong);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.marketing-skill-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+}
+
+.marketing-skill-card span {
+    color: var(--accent-warm);
+    font-weight: 900;
+}
+
+.marketing-skill-card h4 {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.marketing-skill-card p {
+    margin: 0;
+    color: var(--muted-ink);
+    font-size: 0.94rem;
 }
 
 .contact-section {
@@ -743,12 +1213,17 @@ html[data-theme="dark"] .project-card:hover {
 
     .about-grid,
     .ai-layout,
+    .case-study-showcase,
     .skills-layout {
         grid-template-columns: 1fr;
     }
 
     .project-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .ops-demo {
+        max-width: 720px;
     }
 }
 
@@ -809,8 +1284,23 @@ html[data-theme="dark"] .project-card:hover {
     .value-list,
     .ai-card-grid,
     .project-grid,
-    .skill-grid {
+    .skill-grid,
+    .marketing-skill-grid,
+    .learning-lab,
+    .learning-list {
         grid-template-columns: 1fr;
+    }
+
+    .case-study-showcase {
+        padding: 1.5rem 0;
+    }
+
+    .ops-board {
+        grid-template-columns: 1fr;
+    }
+
+    .ops-metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .section,
@@ -840,6 +1330,24 @@ html[data-theme="dark"] .project-card:hover {
 
     .theme-toggle {
         min-width: 72px;
+    }
+
+    .ops-demo__toolbar,
+    .ops-actions,
+    .ops-panel__heading,
+    .ops-order div {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .ops-actions .mini-button,
+    .ops-demo__toolbar .mini-button {
+        width: 100%;
+    }
+
+    .ops-metrics,
+    .ops-table-grid {
+        grid-template-columns: 1fr;
     }
 
     h1 {
