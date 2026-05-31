@@ -7,8 +7,8 @@ const STORAGE_KEYS = {
 const translations = {
     en: {
         meta: {
-            title: 'Adrian Andrada Lockmann | AI Full-Stack Developer',
-            description: 'Portfolio of Adrian Andrada Lockmann, an AI-augmented full-stack developer focused on business tools, web products, and practical AI-assisted workflows.',
+            title: 'Adrian Andrada Lockmann | Full-Stack Web Developer',
+            description: 'Portfolio of Adrian Andrada Lockmann, a full-stack web developer focused on business tools, product interfaces, and practical AI-assisted workflows.',
             themeLight: '#fbfcf8',
             themeDark: '#0c1110'
         },
@@ -18,7 +18,7 @@ const translations = {
         nav: {
             aria: 'Primary navigation',
             about: 'About',
-            ai: 'AI Systems',
+            ai: 'Systems',
             work: 'Work',
             skills: 'Skills',
             contact: 'Contact'
@@ -34,8 +34,8 @@ const translations = {
             themeLightAria: 'Switch to light mode'
         },
         hero: {
-            eyebrow: 'AI-augmented full-stack developer',
-            lede: 'I build business tools, web products, and AI-assisted workflows with practical front-end craft, reliable back-end thinking, and a delivery process accelerated by agents like Codex and Claude.',
+            eyebrow: 'Full-stack web developer',
+            lede: 'I build business tools and web products with clear interfaces, practical back-end thinking, and AI-assisted workflows where they help the work move faster without flattening the judgment.',
             actionsAria: 'Primary actions',
             viewProjects: 'View projects',
             contactMe: 'Contact me',
@@ -49,12 +49,12 @@ const translations = {
             imageAlt: 'Portrait of Adrian Andrada Lockmann',
             availability: 'Available for freelance work',
             role: 'Full-stack developer',
-            title: 'Business tools, clear interfaces, useful delivery.',
-            copy: 'Focused on product demos, maintainable code, API-ready interfaces, and AI-assisted workflows that keep quality and speed moving together.'
+            title: 'Interfaces that explain the system behind them.',
+            copy: 'Focused on product demos, maintainable code, API-ready interfaces, and workflows that keep product decisions visible.'
         },
         about: {
             eyebrow: 'About',
-            title: 'A practical developer who turns rough ideas into usable product demos.',
+            title: 'A practical developer who turns rough ideas into working product surfaces.',
             copyOne: 'I am a self-taught developer with a strong bias toward building, learning, and refining. My work combines front-end structure, back-end thinking, and AI-assisted iteration so each project can move from idea to working product faster.',
             copyTwo: 'I care about readable code, clear communication, responsive design, and keeping human judgment in control of architecture, product decisions, tests, and delivery.',
             valuesAria: 'Working strengths',
@@ -66,8 +66,8 @@ const translations = {
             valueThreeCopy: 'Using Codex and Claude to accelerate planning, implementation, refactor, documentation, and QA.'
         },
         ai: {
-            eyebrow: 'AI marketing systems',
-            title: 'Building creative engines with agents, automation, and product thinking.',
+            eyebrow: 'AI-assisted systems',
+            title: 'Using agents as production infrastructure, not as decoration.',
             lede: 'I use AI agents like Codex and Claude to design marketing systems that move from strategy to publishable content faster: campaign concepts, characters, prompts, landing copy, visual directions, and reusable creative packs.',
             sapTitle: 'Sap Sap character workflows',
             sapCopy: 'For Sap Sap-style projects, I help shape character-driven campaigns with story structures, 9:16 visual prompts, content packs, hooks, scripts, and asset planning that can scale across posts, ads, landing pages, and product education.',
@@ -191,8 +191,8 @@ const translations = {
     },
     es: {
         meta: {
-            title: 'Adrian Andrada Lockmann | Desarrollador Full-Stack con IA',
-            description: 'Portfolio de Adrian Andrada Lockmann, desarrollador full-stack aumentado con IA enfocado en herramientas de negocio, productos web y flujos asistidos por IA.',
+            title: 'Adrian Andrada Lockmann | Desarrollador Web Full-Stack',
+            description: 'Portfolio de Adrian Andrada Lockmann, desarrollador web full-stack enfocado en herramientas de negocio, interfaces de producto y flujos practicos asistidos por IA.',
             themeLight: '#fbfcf8',
             themeDark: '#0c1110'
         },
@@ -202,7 +202,7 @@ const translations = {
         nav: {
             aria: 'Navegacion principal',
             about: 'Sobre mi',
-            ai: 'Sistemas IA',
+            ai: 'Sistemas',
             work: 'Proyectos',
             skills: 'Habilidades',
             contact: 'Contacto'
@@ -218,8 +218,8 @@ const translations = {
             themeLightAria: 'Cambiar a modo claro'
         },
         hero: {
-            eyebrow: 'Desarrollador full-stack aumentado con IA',
-            lede: 'Construyo herramientas de negocio, productos web y flujos asistidos por IA con criterio front-end, pensamiento back-end confiable y un proceso de entrega acelerado por agentes como Codex y Claude.',
+            eyebrow: 'Desarrollador web full-stack',
+            lede: 'Construyo herramientas de negocio y productos web con interfaces claras, pensamiento back-end practico y flujos asistidos por IA cuando ayudan a avanzar sin reemplazar el criterio.',
             actionsAria: 'Acciones principales',
             viewProjects: 'Ver proyectos',
             contactMe: 'Contactame',
@@ -233,12 +233,12 @@ const translations = {
             imageAlt: 'Retrato de Adrian Andrada Lockmann',
             availability: 'Disponible para trabajos freelance',
             role: 'Desarrollador full-stack',
-            title: 'Herramientas de negocio, interfaces claras y entregas utiles.',
-            copy: 'Enfocado en demos de producto, codigo mantenible, interfaces listas para API y flujos asistidos por IA que mantienen calidad y velocidad juntas.'
+            title: 'Interfaces que explican el sistema que tienen detras.',
+            copy: 'Enfocado en demos de producto, codigo mantenible, interfaces listas para API y flujos que mantienen visibles las decisiones de producto.'
         },
         about: {
             eyebrow: 'Sobre mi',
-            title: 'Un desarrollador practico que convierte ideas iniciales en demos de producto usables.',
+            title: 'Un desarrollador practico que convierte ideas iniciales en superficies de producto funcionales.',
             copyOne: 'Soy un desarrollador autodidacta con una fuerte orientacion a construir, aprender y mejorar. Mi trabajo combina estructura front-end, pensamiento back-end e iteracion asistida por IA para llevar cada proyecto de idea a producto funcional mas rapido.',
             copyTwo: 'Me importa escribir codigo legible, comunicar con claridad, disenar de forma responsiva y mantener el criterio humano en arquitectura, decisiones de producto, pruebas y entrega.',
             valuesAria: 'Fortalezas de trabajo',
@@ -250,8 +250,8 @@ const translations = {
             valueThreeCopy: 'Uso Codex y Claude para acelerar planificacion, implementacion, refactor, documentacion y QA.'
         },
         ai: {
-            eyebrow: 'Sistemas de marketing con IA',
-            title: 'Construyendo motores creativos con agentes, automatizacion y pensamiento de producto.',
+            eyebrow: 'Sistemas asistidos por IA',
+            title: 'Uso agentes como infraestructura de produccion, no como decoracion.',
             lede: 'Uso agentes de IA como Codex y Claude para disenar sistemas de marketing que pasan mas rapido de la estrategia al contenido publicable: conceptos de campana, personajes, prompts, copy para landings, direccion visual y packs creativos reutilizables.',
             sapTitle: 'Flujos de personajes para Sap Sap',
             sapCopy: 'Para proyectos estilo Sap Sap, ayudo a crear campanas basadas en personajes con estructuras narrativas, prompts visuales 9:16, packs de contenido, hooks, guiones y planificacion de assets que pueden escalar en posts, anuncios, landings y educacion de producto.',
