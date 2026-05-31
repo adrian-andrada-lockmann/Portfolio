@@ -1071,11 +1071,12 @@ html[data-theme="dark"] .project-card:hover {
 }
 
 .learning-list a {
-    min-height: 92px;
-    padding: 0.9rem;
+    min-height: 160px;
+    padding: 0;
     display: grid;
-    align-content: center;
-    gap: 0.25rem;
+    grid-template-rows: auto auto 1fr;
+    align-content: start;
+    gap: 0.2rem;
     color: var(--ink);
     background: var(--paper-strong);
     border: 2px solid var(--line);
@@ -1093,11 +1094,21 @@ html[data-theme="dark"] .project-card:hover {
     outline: none;
 }
 
+.learning-list img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-bottom: 2px solid var(--line);
+    filter: saturate(0.75) contrast(1.05);
+}
+
 .learning-list span {
+    padding: 0.75rem 0.8rem 0;
     font-weight: 900;
 }
 
 .learning-list small {
+    padding: 0 0.8rem 0.8rem;
     color: var(--muted-ink);
     font-size: 0.84rem;
     font-weight: 700;
